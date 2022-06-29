@@ -1,110 +1,245 @@
-<!-- <html>
-<head>
-
-<link href="./css/style.css">
-<title>tayyab</title>
-</head>
-<body>
-
-
-</body>
-</html> -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>First Webpage</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="This is my first website. It includes lots of information about my life." />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>psd 9</title>
 </head>
 
 <body>
     <header id="header">
         <div class="custom-container">
-            <nav class="navbar navbar-expand-lg">
-                <strong class="header-logo d-inline-block">
-                    <a href="#" class="img-logo d-inline-block">
-                        <img src="./images/header-logo.svg" class="img-fluid" />
-                    </a>
-                </strong>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse header d-flex justify-content-end align-items-center">
-                    <ul class="navbar-nav p-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SPECIALTIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TESTIMONIAL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTECT US</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                    <a class="nav-link" href="#"><i class=" fs-4 text-white fa-solid fa-magnifying-glass"></i></a>
-                  </li> -->
-                    </ul>
-                    <button class="btn ms-4">Get in Touch</button>
+            <div class="row">
+                <div class="col-3 img-logo">
+                    <div class="header-logo">
+                        <strong class="header-logo">
+                            <a href="#">
+                                <img src="image/header-logo.png/" alt="logo" class="img-fluid">
+                            </a>
+                        </strong>
+                    </div>
                 </div>
-            </nav>
+                <div class="col-9">
+                    <div class="navbar justify-content-end">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <ul class="navbar-nav d-flex justify-content-center align-item-center ">
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu  active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu" aria-current="page" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu" aria-current="page" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu" aria-current="page" href="#">Specialties</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu" aria-current="page" href="#">Testimonial</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu" aria-current="page" href="#">BLOG</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link menu" aria-current="page" href="#">Contect Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <div id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- <div class="main-banner">
-                        <div class="banner-heading">
-                            <h1>We’re enabling a <strong>better,</strong> more</h1>
-                        </div>
-                    </div> -->
-                    <div class="main-banner">
-                        <div class="banner-headings">
-                            <h1 class="mb-3">
-                                We’re enabling a
-                                <strong class="text-danger">better,</strong> more
-                            </h1>
-                            <h2 class="mb-md-5 mb-3"><i>efficient</i> healthcare system</h2>
-                        </div>
-                        <div class="banner-btn d-sm-flex justify-content-center align-items-center">
-                            <a href="/" class="btn me-lg-3 me-2">Click to call</a>
-                            <a href="/" class="btn">Schedule demo</a>
+    <main>
+        <div id="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="main-banner">
+                            <div class="video">
+                                <video src="vedio/banner-video.mp4" width="100%" class="disktop" autoplay loop
+                                    playsinline muted></video>
+                            </div>
+                            <!-- <div class="devteam-six-img">
+                                <img src="image/six-img.png" class="img-fluid">
+                            </div> -->
+                            <div class="heading-banner">
+                                <span class="d-block">We Take Care Of Your</span>
+                                <h1 class="mb-0">REVENUE</h1>
+                                <span class="d-block">While You Focus On Your Patients</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <main>
+        <section id="devteam-six">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="img-heading">
+                            <div class="img-hi-text">
+                                <!-- <div class="hi-img">
+                                    <img src="image/redline-img.png" class="img-fluid">
+                                </div> -->
+                                <div class="heading-hi d-flex justify-content-center align-item-center">
+                                    <span class="h">H</span><span class="i">i</span><span class="invertercoma">,</span>
+                                </div>
+                            </div>
+                            <div class="heading-mission">
+                                <h3 class="devteamsix mission">What We Are Providing You?</h3>
+                                <div class="paragraph-devteamsix">
+                                    <span>Best Services for your medical billing</span>
+                                    <p class="full-stack">Our state-of-the-art services can change the dynamics of
+                                        medical billing for your business. Our experts can easily handle the complicated
+                                        process of coding. Moreover, they stay informed about the updating codes.
+                                    </p>
+                                    <p class="full-stack">Medcare MSO covers reimbursement assistance, technical
+                                        services, and AR recovery
+                                        efficiently. We aim to help you; get rid of medical billing stress while you can
+                                        peacefully focus on your practice which will increase your operational
+                                        efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button d-flex justify-content-center align-item-center">
+                                <button class="meet"> Schedule Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hospital-billing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class="hospital fa fa-hospital-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">Hospital Billing Services</h3>
+                                <span class="d-block mb-3">We take a comprehensive, all-inclusive approach.</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-user-md" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">Physician Billing Services</h3>
+                                <span class="d-block mb-3">Your dedication to your patients is of the utmost
+                                    importance.</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-deaf" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">Laboratory Billing Services</h3>
+                                <span class="d-block mb-3 ">Leverage experience and know-how to help chart a successful
+                                    future.</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-building" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">Imaging Center Billing</h3>
+                                <span class="d-block mb-3">We will handle complicated coding for your imaging
+                                    center.</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-umbrella" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">Coverage Discovery</h3>
+                                <span class="d-block mb-3">We take a comprehensive, all-inclusive approach.</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-medkit" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">AR Recovery Services</h3>
+                                <span class="d-block mb-3">To meet the unique needs of your organization.</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-ambulance" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">Ambulatory Surgery Billing</h3>
+                                <span class="d-block mb-3">Relief from billing confusion and increases revenue</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-icon-box mb-md-5 mb-3">
+                            <div class="billing-icon mb-3">
+                                <i class=" hospital fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="heading-span">
+                                <h3 class="mb-3">View All Services</h3>
+                                <span class="d-block mb-3">Relief from billing confusion and increases revenue</span>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="healthcare">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="main-healthcare">
                             <div class="healthcare-heading">
-                                <h3 class="text-danger mb-3">Why Choose us?</h3>
-                                <strong class="text-white d-flex mb-3">We’re Healthcare Revenue Cycle Management
-                                    Experts</strong>
+                                <h3 class="mb-3">Why Choose us?</h3>
+                                <strong class="d-flex mb-3">We’re Healthcare Revenue Cycle Management Experts</strong>
                                 <div class="paragraphe-healththcare">
-                                    <p class="text-white">
+                                    <p>
                                         We’re Healthcare Revenue Cycle Management Experts Medcare
                                         MSO is a trusted name revenue cycle management because we
                                         believe in providing extraordinary solutions that go above
@@ -113,7 +248,7 @@
                                         insurance & patient billing as well as healthcare recovery
                                         assistance to practices of all types and sizes.
                                     </p>
-                                    <p class="text-white">
+                                    <p>
                                         We provide innovative medical software that has been
                                         engineered to simplify all aspects of practice management
                                         and patient engagement and is currently being utilized in
@@ -124,9 +259,12 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="main-img">
-                            <img src="./images/healthcare-sec-img.jpeg" class="img-fluid" />
+                        <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                            <div class="main-img">
+                                <iframe src="https://embed.lottiefiles.com/animation/92309"></iframe>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -137,7 +275,7 @@
                     <div class="col-lg-6">
                         <div class="main-checkup">
                             <div class="heading-paragraphe mb-lg-5 mb-3">
-                                <h3 class="text-danger mb-2">Need a CheckUp?</h3>
+                                <h3 class=" mb-2">Need a CheckUp?</h3>
                                 <span class="text-white">Time to Diagnose Your Medical Billing Needs</span>
                             </div>
                             <ul class="p-0 m-0">
@@ -218,36 +356,927 @@
                 </div>
             </div>
         </section>
-        <section id="healthcare">
+
+        <!-- <section id="check">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="main-img">
-                            <img src="./images/healthy-sec-img.jpeg" class="img-fluid" />
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="main-healthcare">
-                            <div class="healthcare-heading">
-                                <h3 class="text-danger mb-3">Why Choose us?</h3>
-                                <strong class="text-white d-flex mb-3">We’re Healthcare Revenue Cycle Management
-                                    Experts</strong>
-                                <div class="paragraphe-healththcare">
-                                    <p class="text-white">
-                                        We’re Healthcare Revenue Cycle Management Experts Medcare
-                                        MSO is a trusted name revenue cycle management because we
-                                        believe in providing extraordinary solutions that go above
-                                        and beyond standard practices. We provide efficient
-                                        medical billing services, supported by customized
-                                        insurance & patient billing as well as healthcare recovery
-                                        assistance to practices of all types and sizes.
-                                    </p>
-                                    <p class="text-white">
-                                        We provide innovative medical software that has been
-                                        engineered to simplify all aspects of practice management
-                                        and patient engagement and is currently being utilized in
-                                        over 80,000 healthcare facilities nationwide.
-                                    </p>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-nav">
+                            <div class="heading-check">
+                                <strong class="Check">check</strong>
+                                <h1 class="our-projects">OUR PROJECTS</h1>
+                            </div>
+                            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-cream-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-cream" type="button" role="tab"
+                                        aria-controls="pills-cream" aria-selected="true">CreamPYE</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-doge-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-doge" type="button" role="tab" aria-controls="pills-doge"
+                                        aria-selected="false">MiniDOGE</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-chart-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-chart" type="button" role="tab"
+                                        aria-controls="pills-chart" aria-selected="false">PYEChart</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-dogex-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-dogex" type="button" role="tab"
+                                        aria-controls="pills-dogex" aria-selected="false">DOGEex</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-PYEWallet-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-PYEWallet" type="button" role="tab"
+                                        aria-controls="pills-PYEWallet" aria-selected="false">PYEWallet</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-MiniPets-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-MiniPets" type="button" role="tab"
+                                        aria-controls="pills-MiniPets" aria-selected="false">MiniPets</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-PYESwap-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-PYESwap" type="button" role="tab"
+                                        aria-controls="pills-PYESwap" aria-selected="false">PYESwap</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-MiniGames-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-MiniGames" type="button" role="tab"
+                                        aria-controls="pills-MiniGames" aria-selected="false">MiniGames</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-cream" role="tabpanel"
+                                    aria-labelledby="pills-cream-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="about-project">CreamPYE Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit
+                                                            amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit
+                                                            amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h2 class="technologies">A Sneak Peek</h2>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-doge" role="tabpanel"
+                                    aria-labelledby="pills-doge-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="about-project">MiniDOGE Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h2 class="technologies">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-chart" role="tabpanel"
+                                    aria-labelledby="pills-chart-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="About-Project">PYEChart Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h4 class="Sneak-Peek">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="corve-img">
+                                                    <img src="image/corve-img.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-dogex" role="tabpanel"
+                                    aria-labelledby="pills-dogex-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="About-Project">DOGEex Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h4 class="Sneak-Peek">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="corve-img">
+                                                    <img src="image/corve-img.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-PYEWallet" role="tabpanel"
+                                    aria-labelledby="pills-PYEWallet-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="About-Project">PYEWallet Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h4 class="Sneak-Peek">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="corve-img">
+                                                    <img src="image/corve-img.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-MiniPets" role="tabpanel"
+                                    aria-labelledby="pills-MiniPets-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="About-Project">MiniPets Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h4 class="Sneak-Peek">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="corve-img">
+                                                    <img src="image/corve-img.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-PYESwap" role="tabpanel"
+                                    aria-labelledby="pills-PYESwap-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="About-Project">PYESwap Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h4 class="Sneak-Peek">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="corve-img">
+                                                    <img src="image/corve-img.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-MiniGames" role="tabpanel"
+                                    aria-labelledby="pills-MiniGames-tab">
+                                    <div class="">
+                                        <div class="main-heading-img">
+                                            <div class="img-about-project">
+                                                <img src="image/cical.png" class="img-fluid">
+                                            </div>
+                                            <div class="heading-about">
+                                                <h3 class="About-Project">MiniGames Project</h3>
+                                                <p class="paragraph-about">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit,
+                                                    sed
+                                                    do eiusmod tempor
+                                                    incididunt ut lre et dolore magna aliqua
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Technologies</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit. Rlit, sed do eiusmod tempor
+                                                            incididunt ut lre et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="icon-img p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/net-core-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/a-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/green-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/five-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="main-technologies">
+                                                    <div class="headind-technologies">
+                                                        <h2 class="Technologies">Team Collaboration</h2>
+                                                        <p class="paragraph-technologies">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing
+                                                            elit.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="p-0">
+                                                        <li class="d-flex gap-3">
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-one-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-two-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-three-img.png" class="img-fluid">
+                                                            </div>
+                                                            <div class="img-net-core">
+                                                                <img src="image/team-four-img.png" class="img-fluid">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="main-snake">
+                                                    <div class="heading-sanake">
+                                                        <h4 class="Sneak-Peek">A Sneak Peek</h4>
+                                                    </div>
+                                                    <div class="your-class"
+                                                        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="bit-img">
+                                                            <img src="image/bitcoin-img.png" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-text d-flex">
+                                                    <div class="btn">
+                                                        <button class="Check-Project">Check Project Details</button>
+                                                    </div>
+                                                    <div class="text-icon d-flex">
+                                                        <p class="ciscuss px-3">Discuss Your Requirements</p>
+                                                        <a href="#"><i class="text-white fs-3 fa fa-angle-right"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="corve-img">
+                                                    <img src="image/corve-img.png" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -255,10 +1284,802 @@
                 </div>
             </div>
         </section>
+        <section id="ecosystem">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="main-ecosystem">
+                            <div class="heading-dev-ecosystem">
+                                <h2 class="  devteamsix-ecosystem"> DevTeamSix ecosystem</h2>
+                            </div>
+                            <div class="height-ecosystem">
+                                <div class="ecosystem-paragraph">
+                                    <ul class="p-0">
+                                        <li>
+                                            <p class="creating">
+                                                Creating maps of dam ecosystems can help us to understand and explain
+                                                where
+                                                and
+                                                how
+                                                the use of data creates value. A data ecosystem map can help to identify
+                                                the
+                                                key
+                                                roles and the relationships between them. These organizations playing
+                                                these
+                                                roles
+                                                may be operating in the public, private and third-sectors. The same
+                                                organization
+                                                may
+                                                also play multiple roles in an ecosystem.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="creating">
+                                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia
+                                                curae; Ut ipsum ex, auctor sed finibus eget, blandit mollis urna.
+                                                Vivamus
+                                                elementum
+                                                ante in ligula imperdiet faucibus.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="p-0">
+                                        <li>
+                                            <div class="li-cir d-flex gap-3">
+                                                <span class="cir">.</span>
+                                                <p class="creating-cir">Ut quis porta mi. Etiam hendrerit orci
+                                                    mauris
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-cir d-flex gap-3">
+                                                <span class="cir">.</span>
+                                                <p class="creating-cir">Beifend tincidunt turpis dictum et</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-cir d-flex gap-3">
+                                                <span class="cir">.</span>
+                                                <p class="creating-cir">Gras facilisis bibendum nunc, sed commodo ex
+                                                    accums
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <p class="creating">
+                                            Creating maps of dam ecosystems can help us to understand and explain where
+                                            and
+                                            how
+                                            the use of data creates value. A data ecosystem map can help to identify the
+                                            key
+                                            roles and the relationships between them. These organizations playing these
+                                            roles
+                                            may be operating in the public, private and third-sectors. The same
+                                            organization
+                                            may
+                                            also play multiple roles in an ecosystem.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="creating">
+                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                            cubilia
+                                            curae; Ut ipsum ex, auctor sed finibus eget, blandit mollis urna. Vivamus
+                                            elementum
+                                            ante in ligula imperdiet faucibus.
+                                        </p>
+                                    </li>
+                                    <ul class="p-0">
+                                        <li>
+                                            <div class="li-cir d-flex gap-3">
+                                                <span class="cir">.</span>
+                                                <p class="creating-cir">Ut quis porta mi. Etiam hendrerit orci
+                                                    mauris
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-cir d-flex gap-3">
+                                                <span class="cir">.</span>
+                                                <p class="creating-cir">Beifend tincidunt turpis dictum et</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-cir d-flex gap-3">
+                                                <span class="cir">.</span>
+                                                <p class="creating-cir">Gras facilisis bibendum nunc, sed commodo ex
+                                                    accums
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="main-ecosystem-img">
+                            <div class="ecosystem-img">
+                                <img src="image/ecosystem-section-img.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="use-devteam">
+            <div class="container">
+                <div class="row">
+                    <div class="12">
+                        <div class="main-use-devteam">
+                            <div class="heading-use">
+                                <strong class="use-devteam">Use DevTeamSix Skills & </strong>
+                                <h2 class=" Boost-Your">BOOST YOUR BUSINESS</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 order-1 order-lg-0">
+                        <div class="main-man-table">
+                            <div class="man-table-img">
+                                <img src="image/man-table-img.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 order-0 order-lg-1">
+                        <div class="main-popas">
+                            <div class="man-popas-img">
+                                <a tabindex="0" class="popover btn btn-lg popover-bg vactor-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title=" React "
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/vactor-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg two-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-two-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg c-popover-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="c++"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/c-popover-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-box-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-box-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-five-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-five-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-leves-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-leves-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-a-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-a-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-dimaond-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-dimaond-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-html-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="html"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-html-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-smart-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-smart-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg  popover-php-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="php"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-php-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-buble-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-buble-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-n-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="java"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-n-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-truffle-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="Truffle"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-truffle-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-ux-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="ux"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-ux-img.png" class="img-fluid">
+                                </a>
+                                <a tabindex="0" class="btn btn-lg popover-bg popover-us-img" role="button"
+                                    data-bs-toggle="popover" data-bs-trigger="focus" title="javascript"
+                                    data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                    <img src="image/popover-us-img.png" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="served">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-heading-served">
+                            <div class="heading-served">
+                                <h3 class="we-Served">What We Served</h3>
+                                <p class="served-paragraph">Join thousands of satisfied customers using our template
+                                    globally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <div class="row">
+                        <div class="col-md-6 col-12 order-0 order-md-1">
+                            <div class="babble-main-img">
+                                <div class="babble-img">
+                                    <img src="image/dobble-mob-img.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="main-served-dapp">
+                                <h3 class="dApp-Development">dApp Development</h3>
+                                <div class="main-paragraph">
+                                    <p class="served-paragraphe">Decentralized Applications, Software, APIs, and
+                                        Integrations
+                                        Designed To Fit Your Needs.
+                                        am viverra risus ut ornare vulputate, mauris nibh posuere leo, ac
+                                        pellentesque
+                                        evelit
+                                        urna consectetur lectus.
+                                    </p>
+                                    <p class="served-paragraphe"> Vivamus commodo non neque sit amet pulvinar. Sed
+                                        facilisis
+                                        efficitur esevist, eiu
+                                        tristique nunc finibus aliquam.
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <button class="View-Detail">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="mob-img">
+                                <img src="image/mob-img.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="main-mobile-appps">
+                                <div class="heading-dapp">
+                                    <h3 class="dApp-Development">Mobile Apps</h3>
+                                </div>
+                                <div class="main-paragraphe">
+                                    <p class="served-paragraphe">Our strategic process of defining, designing,
+                                        building and
+                                        launching a successful mobile product. Morbi lobortis tristique dolor eget
+                                        laoreet.
+                                        Vivamus commodo non neque sit amet pulvinar.
+                                    </p>
+                                    <p class="served-paragraphe">Gliquam. Pellentesque varius, ex ut interdum
+                                        faucibus,
+                                        sapien lectus ultricies nibh,
+                                        sed pellesque mauris ai ectetur leclobortis tristiquugerat.
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <button class="View-Detail">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <div class="row">
+                        <div class="col-md-6 col-12 order-0 order-md-1">
+                            <div class="babble-img">
+                                <img src="image/small-icon-img.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="main-served-dapp">
+                                <div class="heading-dapp">
+                                    <h3 class="dApp-Development">Digital Marketing</h3>
+                                </div>
+                                <div class="main-paragraph">
+                                    <p class="served-paragraphe">Delivering your message through search engines,
+                                        websites,
+                                        social media, email, and mobile apps.
+                                    </p>
+                                    <p class="served-paragraphe"> Vivamus commodo non neque sit amet pulvinar.
+                                        Sed facilisis
+                                        efficitur esevist, eiu
+                                        tristique nunc finibus aliquam. Pellentesque varius.
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <button class="View-Detail">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile buble">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="mob-img">
+                                <img src="image/machin-img_03.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="main-mobile-appps">
+                                <div class="heading-dapp">
+                                    <h3 class="dApp-Development">Software Development</h3>
+                                </div>
+                                <div class="main-paragraphe">
+                                    <p class="served-paragraphe">Our process of development is Design, Build,
+                                        Deploy,
+                                        Support. You'll get exactly what you expect. Bnare vulputate, mauris nibh
+                                        posuere
+                                        leo, ac pellentesque evelit urnrya consectetur lectusj wbvlsi jbwoz cno.
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <button class="View-Detail">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="our-leadership">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-leadereship">
+                            <div class="heading-leadership">
+                                <span class="heading-our-Leadership">Our Leadership</span>
+                                <h2 class="team">TEAM</h2>
+                            </div>
+                        </div>
+                        <div class="your-classess" data-slick='{"slidesToShow": 5, "slidesToScroll": 1}'>
+                            <div class="main-background">
+                                <div class="background-black-img">
+                                    <img src="image/slider-one-img.png" class="img-fluid">
+                                </div>
+                                <div class="heading-slider">
+                                    <h5 class="Nereu- Noshirwani">Nereus Noshirwani (Nosh)</h5>
+                                    <h5 class="Community-Director">Community Director</h5>
+                                </div>
+                                <div class="orderlist">
+                                    <ul class="d-flex justify-content-center align-item-center p-0">
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a class="social-icons" href="#"><i class="text-white  fa fa-instagram"
+                                                    aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-background">
+                                <div class="background-black-img">
+                                    <img src="image/slider-two-img.png" class="img-fluid">
+                                </div>
+                                <div class="heading-slider">
+                                    <h5 class="Nereu- Noshirwani">Bill Spata</h5>
+                                    <h5 class="Community-Director">CEO</h5>
+                                </div>
+                                <div class="orderlist">
+                                    <ul class="d-flex justify-content-center align-item-center p-0">
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-linkedin"
+                                                    aria-hidden="true"></i></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-background">
+                                <div class="background-black-img">
+                                    <img src="image/slider-three.png" class="img-fluid">
+                                </div>
+                                <div class="heading-slider">
+                                    <h5 class="Nereu- Noshirwani">Ebony McCray</h5>
+                                    <h5 class="Community-Director">CMO</h5>
+                                </div>
+                                <div class="orderlist">
+                                    <ul class="d-flex justify-content-center align-item-center p-0">
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-linkedin"
+                                                    aria-hidden="true"></i></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-background">
+                                <div class="background-black-img">
+                                    <img src="image/slider-four-img.png" class="img-fluid">
+                                </div>
+                                <div class="heading-slider">
+                                    <h5 class="Nereu- Noshirwani">Eric Turner</h5>
+                                    <h5 class="Community-Director">CRO</h5>
+                                </div>
+                                <div class="orderlist">
+                                    <ul class="d-flex justify-content-center align-item-center p-0">
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-linkedin"
+                                                    aria-hidden="true"></i></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-background">
+                                <div class="background-black-img">
+                                    <img src="image/slider-five-img.png" class="img-fluid">
+                                </div>
+                                <div class="heading-slider">
+                                    <h5 class="Nereu- Noshirwani">Deven Hammond</h5>
+                                    <h5 class="Community-Director">CCO</h5>
+                                </div>
+                                <div class="orderlist">
+                                    <ul class="d-flex justify-content-center align-item-center p-0">
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-linkedin"
+                                                    aria-hidden="true"></i></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-background">
+                                <div class="background-black-img">
+                                    <img src="image/slider-six-img.png" class="img-fluid">
+                                </div>
+                                <div class="heading-slider">
+                                    <h5 class="Nereu- Noshirwani">Ryan O'Mara</h5>
+                                    <h5 class="Community-Director">CHO</h5>
+                                </div>
+                                <div class="orderlist">
+                                    <ul class="d-flex justify-content-center align-item-center p-0">
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a class="social-icons" href="#"><i class=" text-white fa fa-linkedin"
+                                                    aria-hidden="true"></i></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-heading-proud">
+                            <div class="heading-proud">
+                                <h2 class="Proud-Empowered">We are Proud to Empowered</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-red">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <div class="main-heading-price">
+                                <div class="heading-price">
+                                    <strong class="price">140.758</strong>
+                                    <span class="Active-Hours">Active Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="main-heading-price">
+                                <div class="heading-price">
+                                    <strong class="price">4050</strong>
+                                    <span class="Active-Hours"> Employees</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="main-heading-price">
+                                <div class="heading-price">
+                                    <strong class="price">1200</strong>
+                                    <span class="Active-Hours"> Successful Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="main-heading-price">
+                                <div class="heading-price">
+                                    <strong class="price">1000+</strong>
+                                    <span class="Active-Hours">Hapy Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="mian-work-heading">
+                            <div class="heading-work">
+                                <strong class="work-with">We Work With the</strong>
+                                <h2 class="best"> BEST PARTNERS</h2>
+                                <div class="paragraph-our-leadership">
+                                    <p class="our-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit,
+                                        sed do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilid
+                                        tincidunt,
+                                        quam
+                                        nec porta accumsan, nisl quam mattis neque, in digissim ser ipsum arcu quis
+                                        mmotrices grado viverra maecenas accsis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button class="Become-Our">Become Our Partner</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-md-4 col-6">
+                                <div class="main-img-est">
+                                    <a tabindex="0" class="popover-1 btn btn-lg" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" title=" React "
+                                        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                        <img src="image/twix-img.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="main-img-est">
+                                    <div class="main-img-est">
+                                        <a tabindex="0" class="popover-1 btn btn-lg" role="button"
+                                            data-bs-toggle="popover" data-bs-trigger="focus" title=" React "
+                                            data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                            <img src="image/uni-img.png" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="main-img-est">
+                                    <a tabindex="0" class="popover-1 btn btn-lg" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" title=" React "
+                                        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                        <img src="image/atlas-img.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="main-img-est">
+                                    <a tabindex="0" class="popover-1 btn btn-lg" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" title=" React "
+                                        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                        <img src="image/circle-img.png" class="img-fluid">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="main-img-est">
+                                    <a tabindex="0" class="popover-1 btn btn-lg" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" title=" React "
+                                        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                        <img src="image/thisst-img.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="main-img-est">
+                                    <a tabindex="0" class="popover-1 btn btn-lg" role="button" data-bs-toggle="popover"
+                                        data-bs-trigger="focus" title=" React "
+                                        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lae et dolore magna aliqua.">
+                                        <img src="image/tryanglee-img.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-heading-client">
+                            <div class="client-heading">
+                                <h3 class="Clients-Love">Clients Love With Us</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="mian-box">
+                            <div class="box">
+                                <p class="eric-paragraph">Quis ipsum suspendisse ultrices gravida. rem ipsum dolor
+                                    sit
+                                    amet, consectetur
+                                    adipiscing elit, sed do bod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="main-img-eric d-flex gap-4">
+                                <div class="img-eric">
+                                    <img src="image/eric-img.png">
+                                </div>
+                                <div class="heading-eric">
+                                    <h6 class="eric-turner">Eric Turner</h6>
+                                    <h6 class="eric-turner">Owner of PETGames</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mian-box">
+                            <div class="box">
+                                <p class="eric-paragraph">Lorem ipsum dolor sit amet, consectetur adipicing elit,
+                                    sed do
+                                    bod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                    ultrices gravida.
+                                </p>
+                            </div>
+                            <div class="main-img-eric d-flex gap-4">
+                                <div class="img-eric">
+                                    <img src="image/stevie-img.png">
+                                </div>
+                                <div class="heading-eric">
+                                    <h6 class="eric-turner">Stevie Hoang</h6>
+                                    <h6 class="eric-turner">Owner of PEYChart</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- <footer id="footer">
+        <div class="background-img-footer-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-footer-img">
+                            <div class="footer-img">
+                                <img src="image/footer-img.png">
+                            </div>
+                            <div class="orderlist">
+                                <ul class="footer d-flex p-0">
+                                    <li>
+                                        <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-search d-flex">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Subscribe to our
+                                        newsletter</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Enter your email ">
+                                </div>
+                                <div class="button">
+                                    <button class="Subscribe-button">Subscribe </button>
+                                </div>
+                            </div>
+                            <ul class=" apple-a p-0">
+                                <li>
+                                    <a class="apple" href="#">Apply for a position at DevTeamSix |</a>
+                                    <a class="apple" href="#">Latest News |</a>
+                                    <a class="apple" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-background-img">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0 main-last-footer">
+                        <div class="footer-main-paragraph-last d-flex">
+                            <div class="footer-last">
+                                <p class="copy-rights">© 2021 Devteamsix. All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="footer-logo">
+                            <img src="image/footer-a-img.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({
+                arrows: true,
+                dots: true,
+            });
+        });
+        $(document).ready(function () {
+            $('.your-classess').slick({
+                arrows: true,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 280,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
 </body>
 
 </html>

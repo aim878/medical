@@ -1,157 +1,2606 @@
-body {
-  background-color: #000;
-}
-a{
-    text-decoration: none;
-}
-ul li{
-    list-style: none;
-}
-
-
-
-header#header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  padding: 10px 0px;
-  z-index: 99;
-}
-#header .custom-container {
-  max-width: 1720px;
-  padding: 0px 12px;
-  margin: 0 auto;
-}
-#header a.img-logo img {
-  height: 30px;
-  width: 95px;
-}
-#header a.nav-link {
-  color: #fff;
-  font-weight: 500;
-  font-size: 13px;
-  transition: 0.3s;
-}
-#header a.nav-link:hover {
-  color: red;
-}
-#header .nav-item {
-  margin-left: 30px;
-}
-.btn {
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 8px;
-  padding: 12px 25px;
-  font-size: 16px;
-  font-weight: 500;
-  transition: 0.3s;
-  min-width:170px;
-}
- .btn:hover {
-  background-color: white;
-  color: #000;
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-
-/* banner */
-
-#banner { 
-    background-image: url('../images/banner-bg.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    position: relative; 
-    padding: 250px 0px;
-    margin-bottom: 100px;
-}
-/* #banner .banner-heading h1{ font-size: 70px; font-weight: normal; line-height: 80px; color: #fff;}
-#banner .banner-heading {  max-width: 500px;} */
-#banner .banner-headings h1 {
-  font-size: 70px;
-  font-weight: normal;
-  line-height: 80px;
-  color: #fff;
-  text-align: center;
-}
-#banner .banner-headings {
-  text-align: center;
-}
-#banner .banner-headings h2 {
-  font-size: 64px;
-  font-weight: normal;
-  line-height: 70px;
-  color: #fff;
-  text-align: center;
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Healthcare  */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
-#healthcare {
-    margin-bottom: 100px;
-}
-#healthcare .healthcare-heading h3{
-    font-size: 34px; font-weight: 700;
-}
-#healthcare .healthcare-heading strong{ 
-    font-size: 24px; 
-     font-weight: normal;
-}
-#healthcare .healthcare-heading p{
-    font-size: 16px;
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
     font-weight: normal;
-}
-#healthcare .main-img img{
-    width: 100%;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* checkup */
-#checkup{
-    margin-bottom: 100px;
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
-#checkup .heading-paragraphe h3{
-    font-size: 34px;
+ul li{  list-style: none;}
+body{ font-family: 'Open Sans';}
+
+
+
+#header a{display: inline-block;}
+#header {background: #000; padding: 12px 100px;}
+#header .menu{ padding: 0; color: #fff; font-size: 16px; margin-left: 15px; font-family: 'Open Sans';
+    font-weight: 600; transition: all ease-in-out 0.3s;}
+#header .menu{position: relative;}
+#header .menu:hover{color: #84d1d1;}
+#header .menu:hover::after{width: 100%;transition: all ease-in-out 0.3s;}
+#header .menu::after{content: ""; position: absolute; background-color: #84d1d1; 
+     height: 1px; width: 0%; left: 0%; bottom: -10px; transition: 0.3s;}
+
+#banner { position: relative;} 
+#banner .main-banner { position: relative;}
+#banner .heading-banner { position: absolute; top: 35%; left: 35%;}
+#banner .heading-banner span { font-size: 34px; font-weight: 600; }
+#banner .heading-banner h1 { font-size: 137px; font-weight: 700; color: #84d1d1;line-height: 140px;}
+#banner video.disktop { opacity: 1.9;}
+#banner .devteam-six-img { position: absolute; left: 50%; bottom: -10px; display: flex; justify-content: center;
+     align-items: center; z-index: 9; transform: translateX(-53%);}
+#banner:before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; background: #000000a8;
+    width: 100%; height: 100%; z-index: 1;}
+#banner .p-0 { position: relative;}
+
+#hospital-billing{ background-image: url('../image/dev-six-img.png'); background-position: center;
+    background-repeat: no-repeat; background-size: cover; position: relative; padding:100px 0px; margin-top: -2px;}
+#hospital-billing .main-icon-box { border: 1px solid #8f9092; padding: 25px; transition: 0.3s;}
+#hospital-billing .main-icon-box:hover{  box-shadow: 0px 0px 20px #fff; }
+#hospital-billing  i.hospital{ font-size: 42px; color: #84d1d1;}
+#hospital-billing  .heading-span h3{ font-size: 20px; font-weight: normal; color: #8f9092}
+#hospital-billing  .heading-span span{font-size: 16px; font-weight: normal; color: #8f9092;}
+#hospital-billing  .heading-span a{ text-decoration: none; color: #fff;}
+
+#healthcare { background-image: url('../image/dev-six-img.png'); background-position: center;
+    background-repeat: no-repeat; background-size: cover; position: relative; padding:0px 0px 100px 0px; margin-top: -2px; }
+#healthcare .healthcare-heading h3{color:#84d1d1; font: 22px; font-weight: normal;}
+#healthcare .healthcare-heading strong{ color:#8f9092 ; font-size: 18px; font-weight: normal;}
+#healthcare .paragraphe-healththcare p{ font-size: 16px;font-weight: normal; color:#8f9092  ;}
+#healthcare iframe { height: 330px;  width: 100%; }
+
+#checkup{ background: url('../image/form-bg.jpg'); background-position: center;   background-repeat: no-repeat;
+    background-size: cover; position: relative; padding:100px 0px}
+#checkup:before {  content: "";  position: absolute;  top: 0;  left: 0;  bottom: 0;  background: #4472dfa8;  width: 100%;
+        height: 100%;  z-index: 1; opacity: 0.3;}
+#checkup .main-checkup h3{ font-size: 22px; color: #84d1d1; font-weight: normal;
+}
+
+
+#devteam-six{
+    background-image: url('../image/dev-six-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0px 0px 128px 0px;
+}
+/* #devteam-six .img-heading::after{
+    background-image: url('../image/corve-img.png');
+    background-repeat: no-repeat;
+    content: "h";
+    position: absolute;
+    bottom:-10px;
+    width: 250px;
+    left: 50%;
+   transform: translateX(-50%);
+} */
+.devteam-six-img{
+    width: 320px; 
+    height: 350px;
+    position: relative;
+    animation: mymove 5s ;
+  }
+  @keyframes mymove {
+    from {width: 585px; height: 655px;}
+    to {width: 320px; height: 350px;}
+  }
+#devteam-six  .img-hi-text{
+    margin-bottom: 30px;
+}
+#devteam-six .hi-img {
+    width: 11px;
+    height: 126px;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+#devteam-six  span.h {
+    font-size: 64px;
+    color: #ffffff;
+    font-family: 'Open Sans';
     font-weight: 700;
 }
-#checkup .heading-paragraphe span{
-    font-size: 18px;
+#devteam-six span.i{
+    font-size: 64px;
+    color: #84d1d1;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+#devteam-six span.invertercoma{
+    font-size: 64px;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+#devteam-six  h3.devteamsix.mission{
+    text-align: center;
+    color: #84d1d1;
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom:35px;
+}
+#devteam-six .paragraph-devteamsix{
+    max-width: 1035px;
+    margin: 0 auto;
+}
+#devteam-six p.full-stack{
+    font-size: 22px;
+    color: #8f9092;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:50px;
+    
+    line-height: 39px;
+}
+#devteam-six button.meet{ font-size: 16px; color: #ffffff;font-weight: 600;  background: transparent; min-width: 180px;
+     border: 2px solid #84d1d1;  border-radius: 30px;  padding: 11px 30px;  margin-right: 10px;  transition: 0.3s;}
+#devteam-six button.meet:hover{
+    background-color:#84d1d1;
+    color: #2d2e32;
+}
+#devteam-six button.Read-More{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #dedde1;
+    border-radius: 30px;
+    padding: 11px 46px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+#devteam-six button.Read-More:hover{
+    background-color:#acacad ;
+    color: #2d2e32;
+}
+#devteam-six .corve-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px;
+}
+#check{
+    background-image: url('../image/check-background-img.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -3PX;
+    padding: 128px 0px;
+    position: relative;
+}
+
+#check .row::after{
+    background-image: url('../image/corve-img.png');
+    background-repeat: no-repeat;
+    content: "h";
+    position: absolute;
+    bottom:-10px;
+    width: 250px;
+    left: 50%;
+   transform: translateX(-50%);
+}
+#check strong.Check{
+    font-size: 34px;
+    color: #f3f3f3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#check h1.our-projects{
+    font-size: 64px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+#check .nav-pills .nav-link{
+    color: #c9c9ca;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    background: none;
+}
+#check .nav-pills .nav-link.active{
+    color:#f60000 ;
+}
+#check .nav-pills .nav-link .active {
+    position: relative;
+}
+#check .nav-pills .nav-link.active::before{
+   align-items: center;
+   justify-content: space-between;
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 7px 7.5px 0 7.5px;
+    border-color: #f60000 transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#check .nav-pills .nav-link:hover{
+    color:#f60000 ;
+}
+#check .nav-pills .nav-link {
+    position: relative;
+}
+#check .nav-pills .nav-link:hover::before{
+   align-items: center;
+   justify-content: space-between;
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 7px 7.5px 0 7.5px;
+    border-color: #f60000 transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#check .img-heading{
+    position: relative;
+    margin-bottom: 60px;
+}
+#check .img-about-project {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    outline: 2px solid white;
+    outline-offset: 6px;
+    margin: 105px auto 60px;
+}
+#check h3.about-project{
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#check p.paragraph-about{
+    font-size: 16px;
+    color: #bdbdbf;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    text-align: center;
+}
+#check .main-heading-img{
+    margin-bottom: 80px;
+}
+#check h2.technologies{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+#check p.paragraph-technologies{
+    color: #868688;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 30px;
+    margin-right: 70px;
+}
+#check ul.d-flex.justify-content-center.align-items-center.p-0{
+    margin-bottom: 120px;
+}
+#check .slick-dots li button {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    text-align: end;
+}
+#check .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+#check .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 9px;
+    height:9px;
+    margin: 5px;
+    padding: 0;
+    cursor: pointer;
+}
+#check button.slick-prev.slick-arrow {
+    display: none !important;
+}
+#check button.slick-next.slick-arrow {
+    display: none !important;
+} */
+#check .slick-track{
+    width: 4452px !important;
+}
+#check .slick-dots {
+    position: absolute;
+    bottom: -35px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: end;
+}
+#check .slick-dots li.slick-active button {
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+#check .slick-next:before{
+    display: none;
+}
+#check .slick-prev:before{
+    display: none;
+}
+#check .main-snake{
+    margin-bottom: 60px;
+}
+#check button.Check-Project{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    background: transparent;
+    color: #ffffff;
+    padding: 12px 27px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+#check button.Check-Project:hover{
+   background-color:#fff;
+   color: #18181d;
+}
+#check p.ciscuss{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-right: 10px;
+}
+#check .text-icon.d-flex{
+    padding: 20px;
+}
+#check ul.icon-img.p-0{
+    margin-bottom: 60px;
+}
+#check .button-text.d-flex{
+    margin-bottom: 100px;
+}
+#check .corve-img{
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ecosystem{
+    background-image: url('../image/devteam-ecosystem.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -3PX;
+    padding: 128px 0px 0px 0px;
+}
+#ecosystem h2.devteamsix-ecosystem{
+    font-size: 32px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 45px;
+}
+#ecosystem .ecosystem-paragraph{
+    max-width: 608px;
+}
+#ecosystem p.creating{
+    color: #8d8d90;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#ecosystem p.creating-cir{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #8d8d90;
+}
+#ecosystem span.cir{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+#ecosystem p.p-creating{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #fff;
+}
+#ecosystem  .main-ecosystem{
+    margin-bottom: 150px;
+    padding: 0px 150px;
+}
+#ecosystem  .height-ecosystem{
+    overflow-y: auto;
+}
+#ecosystem .height-ecosystem::-webkit-scrollbar {
+    background-color: #27282b;
+    width: 5px;
+}
+#ecosystem  .height-ecosystem::-webkit-scrollbar-thumb{
+     background: linear-gradient(90deg,#f50000,#f50000 )!important;
+}
+#ecosystem  .height-ecosystem::-webkit-scrollbar-track{height: 20px; }
+#ecosystem  .ecosystem-paragraph{
+    height: 750px;
+}
+#ecosystem  .main-ecosystem-img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#use-devteam{
+    background-image: url('../image/popover-background-img.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -2PX;
+    position: relative;
+}
+#use-devteam strong.use-devteam{
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#use-devteam h2.Boost-Your{
+    font-size: 64px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #f8f8f8;
+    text-align: center;
+}
+#use-devteam .main-use-devteam{
+    padding-top: 125px;
+    margin-bottom: 100px;
+}
+#use-devteam a.popover-bg {
+    background-color: #1c1c21;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 1px solid #1c1c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+#use-devteam a.popover-bg:focus{
+    box-shadow: none;
+}
+#use-devteam a.popover-bg:hover{
+    background-color: #ab0c0d;
+}
+#use-devteam .main-popas{
+    position: relative;
+    height: 100%;
+}
+#use-devteam a.vactor-img{
+    position: absolute;
+    top: 43px;
+}
+#use-devteam .two-img{
+    position: absolute;
+    top: 275px;
+    left: -15px;
+}
+#use-devteam .c-popover-img{
+    position: absolute;
+    bottom: 260px;
+    left: 15px;
+}  
+#use-devteam .popover-box-img{
+    position: absolute;
+    top: 100px;
+    left: 145px;
+}
+#use-devteam .popover-five-img{
+    position: absolute;
+    top: 210px;
+    left: 105px;
+}
+#use-devteam .popover-leves-img{
+    position: absolute;
+    top: 344px;
+    left: 145px;
+}
+#use-devteam .popover-a-img{
+    position: absolute;
+    top: 130px;
+    left: 300px;
+}
+#use-devteam .popover-dimaond-img{
+    position: absolute;
+    top: 257px;
+    left: 257px;
+}
+#use-devteam .popover-html-img{
+    position: absolute;
+    bottom: 275px;
+    left: 300px;
+}
+#use-devteam .popover-smart-img{
+    position: absolute;
+    top: 60px;
+    right: 130px;
+}
+#use-devteam .popover-php-img{
+    position: absolute;
+    top: 197px;
+    right: 105px;
+}
+#use-devteam .popover-buble-img{
+    position: absolute;
+    top: 313px;
+    right: 148px;
+}
+#use-devteam .popover-n-img{
+    position: absolute;
+    top: 128px;
+    right: -40px;
+}
+#use-devteam .popover-truffle-img{
+    position: absolute;
+    top: 255px;
+    right: -9px;
+}
+#use-devteam .popover-ux-img{
+    position: absolute;
+    bottom: 265px;
+    right: 65px;
+}
+#use-devteam .popover-us-img{
+    position: absolute;
+    bottom: 161px;
+    right: -46px;
+}
+.popover {
+    font-size: 13px;
+    margin-top: 100px;  
+    max-width: 500px;
+}
+.popover.fade{
+    border-top: 5px solid #c90506 !important;
+    width: 500px !important;
+    height: 200px !important;
+    background-color: #16161a;
+    display: inline-block;
+}
+.popover-header {
+    background-color: #16161a;
+    color: #fff; 
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px 0px;
+}
+.popover-body {
+    color: #fff;  
+    text-align: center;
+    font-size: 14px;
     font-weight: normal;
+    padding: 20px 30px;
 }
-#checkup .checkup-list.text-white {
-    border: 1px solid #dc3545;
-    border-radius: 12px;
-    background: #dc3545;
-    padding: 15px 60px;
+.popover-arrow{
+    display: none !important;
 }
-#checkup .checkup-list span{
-    font-size: 18px;
-    font-weight: 500;
+#served{
+    background-image: url('../image/served-background-img.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -2PX;
+    padding: 60px 0px;
+    position: relative;
+    z-index: 3;
 }
-#checkup .checkup-list p{
-    font-size: 15px;
-    font-weight: normal;
+.mobile{
+    position: relative;
+    padding: 50px 0px;
 }
-#checkup .form-control:focus {
+.mobile::after{
+        background-image: url('../image/corve-img.png');
+        background-repeat: no-repeat;
+        content: "h";
+        position: absolute;
+        bottom:-10px;
+        width: 250px;
+        left: 50%;
+       transform: translateX(-50%);
+}
+.main-paragraph{
+    max-width: 550px;
+}
+.main-paragraphe {
+    max-width: 623px;
+    margin-left: 7px;
+}
+.buble::after{
+    display: none;
+}
+#served::after{
+    background-image: url('../image/tryangle-img.png');
+    content: "h";
+    position: absolute;
+    top: 0px;
+    width: 120px;
+    left: 50%;
+    height: 54px;
+    background-repeat: no-repeat;
+   transform: translateX(-50%);
+}
+#served .babble-img{
+    text-align: right;
+}
+#served .main-heading-served{
+    padding-top: 110px;
+}
+#served .main-served-dapp{
+    margin-bottom: 50px;
+}
+#served h3.we-Served{
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#served p.served-paragraph{
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #a4a4a7;
+    text-align: center;
+    margin-bottom: 120px;
+}
+#served h3.dApp-Development{
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    color: #cc0506;
+    margin-bottom: 30px;
+}
+#served .paragraph-served{
+    max-width: 550px;
+}
+#served p.served-paragraphe{
+    font-size: 16px;
+    color: #bcbcbd;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+#served button.View-Detail{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 11px 35px;
+    transition: 0.3s;
+}
+#served button.View-Detail:hover{
+    color:#17171c ;
+    background-color: #ffff;
+}
+#served .corve-img{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile .main-mobile-appps{
+    text-align: right;
+}
+.paragraph-serveds {
+    margin-left: 50px;
+}
+#our-leadership{
+    background-image: url('../image/last-section-background-img.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-top: -1px;
+}
+#our-leadership .heading-leadership{
+    padding-top: 145px;
+    margin-bottom: 100px;
+}
+#our-leadership span.heading-our-Leadership{
+    color: #e0e0e0;
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#our-leadership h2.team{
+    color: #fafafa;
+    font-size: 64px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-align: center;
+}
+#our-leadership .background-black-img{
+    background-color: #000;
+    height: 537px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+#our-leadership .your-classess{
+    margin-bottom: 80px;
+}
+#our-leadership .your-classess .slick-track{
+    opacity: 1;
+    width: 7120px !important;
+    transform: translate3d(-1896px, 0px, 0px);
+}
+#our-leadership .your-classess .slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    width: 330px !important;
+    margin: 0px 13px;
+}
+#our-leadership .heading-slider{
+    padding-top: 35px;
+}
+#our-leadership .backgrounds-black-img{
+    display: none;
+}
+#our-leadership h5.Nereu-.Noshirwani{
+    font-size: 16px;
+    color: #c9c9ca;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#our-leadership h5.Community-Director{
+    font-size: 16px;
+    color: #c9c9ca;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#our-leadership .your-classess a{
+    height: 30px;
+    width: 30px;
+    background-color: #1e1e23;
+    border-radius: 50%;
+    border: 1px solid #1e1e23;
+    margin-left: 5px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#our-leadership .your-classess a:hover{
+    background-color: #cc0506;
+    color: #fff;
+    border: 1px solid #cc0506;
+}
+#our-leadership h2.Proud-Empowered{
+    color: #ffffff;
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#our-leadership strong.price{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    display: block;
+}
+.heading-price{
+    text-align: center;
+}
+#our-leadership span.Active-Hours{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+   text-align: center;
+}
+#our-leadership .slick-next:before, .slick-next:before {
+    content:"\f054";
+    font-family: FontAwesome;
+    font-weight: 300;
+    color: white;
+    font-size: 50px;
+    margin-left: -350px;
+    -webkit-font-smoothing: antialiased;
+}
+#our-leadership .slick-prev:before, .slick-next:before{
+    content:"\f104";
+    font-family: FontAwesome;
+    font-weight: 300;
+    color: white;
+    font-size: 50px;
+    margin-left: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+#our-leadership .slick-prev, .slick-next {
+    position: absolute;
+    top: 40%;
+    display: block;
+}
+#our-leadership .background-black-img img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+#our-leadership .background-black-img:hover {
+        background-color: red;
+}
+#our-leadership .background-black-img:hover > img{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+  }
+#our-leadership .background-black-img:hover ~ .orderlist .social-icons {
+    background-color: #cc0506;
+    color: #fff;
+    border: 1px solid #cc0506;
+}
+#our-leadership .background-red {
+    background: #bf0708;
+    padding: 20px 0px;
+    margin-bottom: 120px;
+}
+#our-leadership strong.work-with{
+    color: #fff;
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+#our-leadership h2.best{
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+#our-leadership .paragraph-our-leadership{
+    max-width: 573px;
+}
+#our-leadership p.our-paragraph{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #949496;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+#our-leadership button.Become-Our{
+    color: #cacacb;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 12px 29px;
+    background: transparent;
+    border: 2px solid #dedde1;
+    transition: 0.3s;
+}
+#our-leadership button.Become-Our:hover{
+    background-color: #cacacb;
+    color: #27272b;
+}
+#our-leadership .main-img-est {
+    margin: 50px 0px;
+}
+#our-leadership .btn:focus {
     outline: 0;
     box-shadow:none;
 }
-#checkup ::placeholder {
-    color: #fff ;
+#our-leadership .main-img-est{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
 }
-#checkup input.form-control.username {
+#our-leadership .main-img-est:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+  }
+#our-leadership .mian-work-heading{
+    margin-bottom: 130px;
+}
+#our-leadership h3.Clients-Love{
+    color: #dadada;
+    font-size: 34px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#our-leadership .mian-box{
+    background-color: #17171c;
+    border-top: 3px solid #cc0506;
+    margin-bottom: 90px;
+    padding: 40px 40px;
+}
+#our-leadership .box{
+    max-width: 490px;
+}
+#our-leadership p.eric-paragraph{
+    color: #8b8b8e;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-bottom: 45px;
+    line-height: 23px;
+}
+#our-leadership  h6.eric-turner {
+    color: #a7a7a8;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+#our-leadership .slick-prev, .slick-next {
+    top: 35%;
+}
+#footer .background-img-footer-one{
+    background-image: url('../image/footer-background-img.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-top: -1px;
+}
+#footer .main-footer-img {
+    padding-top: 90px;
+}
+#footer .footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#footer .footer a{
+    text-decoration: none;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #111115;
+    background-color: #111115;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+#footer .footer a:hover{
+    background-color: #fff;
+    color:#111115 ;
+}
+#footer ul.footer.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#footer .main-search.d-flex {
+    margin-bottom: 15px;
+}
+#footer .form-control{
+    width:400px;
+    background-color: transparent;
+    border:1px solid #2f2f33;
     padding: 12px;
-    border-radius: 7px;
-    background: transparent;
-    color: #fff;
-    border:2px solid #fff !important;
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
-#checkup textarea#floatingTextarea2 {
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 7px;
-    color: #fff;
-    resize: none;
+#footer label.form-label {
+    color: #8b8b8e;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 400;
 }
-#checkup button.btn {
-    border: 2px solid;
+#footer .mb-3{
+    justify-content: center;
+    align-items: center;
+}
+#footer .main-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .form-control:focus{
+    box-shadow: none;
+}
+#footer button.Subscribe-button {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: 1px solid #2f2f33;
+    padding: 12px 31px;
+    margin-top: 15px;
+    transition: 0.3s;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+#footer button.Subscribe-button:hover{
+    background-color: #fff;
+    color: #2f2f33;
+}
+#footer .footer-background-img{
+    background-image: url('../image/footer-background-last.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+#footer .col-12.p-0.main-last-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .footer-main-paragraph-last.d-flex {
+    padding: 12px;
+}
+#footer p.copy-rights{
+    color: #a40b0e;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 0;
+}
+#footer .footer-logo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} 
+ul.apple-a {
+    text-align: center;
+}
+#footer a.apple {
+    color: #868687;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 15px;
+    transition: 0.3s;
+}
+#footer a.apple:hover{
+    color: #ac0d0e;
+}
+@media(max-width:1399px){
+    #header .menu {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #devteam-six span.h {
+        font-size: 60px;
+    }
+    #devteam-six span.i {
+        font-size: 60px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 60px;
+    }
+    #devteam-six h3.devteamsix.mission {
+        font-size: 32px;
+    }
+    #devteam-six p.full-stack {
+        font-size: 20px;
+        max-width: 935px;
+    }
+    #check strong.Check {
+        font-size: 32px;
+    }
+    #check h1.our-projects {
+        font-size: 60px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 15px;
+    }
+    #check .img-about-project {
+        width: 140px;
+        height: 140px;
+    }
+    #check h3.about-project {
+        font-size: 22px;
+    }
+    #check p.paragraph-about {
+        font-size: 15px;
+    }
+    #check h2.technologies {
+        font-size: 22px;
+    }
+    #check p.paragraph-technologies {
+        font-size: 15px;
+    }
+    #check button.Check-Project {
+        font-size: 15px;
+        padding: 11px 22px;
+    }
+    #check p.ciscuss {
+        font-size: 15px;
+    }
+    #ecosystem .main-ecosystem {
+        padding: 0px 20px;
+    }
+    #ecosystem h2.devteamsix-ecosystem{
+        font-size: 30px;
+    }
+    #ecosystem p.creating {
+        font-size: 15px;
+    }
+    #ecosystem p.p-creating {
+        font-size: 15px;
+    }
+    #use-devteam h5.use-devteam {
+        font-size: 32px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 60px;
+    }
+    #served h3.we-Served {
+        font-size: 32px;
+    }
+    #served p.served-paragraph {
+        font-size: 20px;
+    }
+    #served h3.dApp-Development {
+        font-size: 32px;
+    }
+    #served p.served-paragraphe {
+        font-size: 15px;
+    }
+    #served button.View-Detail {
+        font-size: 15px;
+        padding: 10px 33px;
+    }
+    #mobile h3.dApp-Development {
+        font-size: 32px;
+    }
+    #mobile p.served-paragraphe {
+        font-size: 15px;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 32px;
+    }
+    #our-leadership h2.team{
+        font-size: 60px;
+    }
+    #our-leadership h5.Nereu-.Noshirwani {
+        font-size: 15px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 32px;
+    }
+    #our-leadership h2.price {
+        font-size: 28px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 32px;
+    }
+    #our-leadership h2.best {
+        font-size: 60px;
+    }
+    #our-leadership p.our-paragraph {
+        font-size: 15px;
+    }
+    #our-leadership button.Become-Our {
+        font-size: 15px;
+        padding: 12px 25px;
+    }
+    #our-leadership h3.Clients-Love {
+        font-size: 32px;
+    }
+    #our-leadership p.eric-paragraph {
+        font-size: 15px;
+    }
+    #our-leadership .background-black-img {
+        height: 500px;
+    }
+    #our-leadership .your-classess .slick-slide {
+        width: 250px !important;
+    }
+    #use-devteam a.popover-bg {
+        height: 70px;
+        width: 70px;
+    }
+    #use-devteam .popover-dimaond-img {
+        position: absolute;
+        top: 252px;
+        left: 200px;
+    }
+    #use-devteam .popover-html-img {
+        position: absolute;
+        bottom: 266px;
+        left: 220px;
+    }
+    #use-devteam .popover-a-img {
+        position: absolute;
+        top: 130px;
+        left: 230px;
+    }
+    #use-devteam .popover-php-img {
+        position: absolute;
+        top: 197px;
+        right: 125px;
+    }
+    #use-devteam .popover-box-img {
+        position: absolute;
+        top: 100px;
+        left: 109px;
+    }
+    #use-devteam .popover-five-img {
+        position: absolute;
+        top: 217px;
+        left: 89px;
+    }
+    #use-devteam .popover-leves-img {
+        position: absolute;
+        top: 344px;
+        left: 109px;
+    }
+    #use-devteam .popover-smart-img {
+        position: absolute;
+        top: 60px;
+        right: 150px;
+    }
+    #use-devteam .popover-buble-img {
+        position: absolute;
+        top: 313px;
+        right: 186px;
+    }
+    #use-devteam .popover-n-img {
+        position: absolute;
+        top: 137px;
+        right: 26px;
+    }
+    #use-devteam .popover-truffle-img {
+        position: absolute;
+        top: 284px;
+        right: 67px;
+    }
+    #use-devteam .popover-ux-img {
+        position: absolute;
+        bottom: 265px;
+        right: 110px;
+    }
+    #use-devteam .popover-us-img {
+        position: absolute;
+        bottom: 173px;
+        right: 35px;
+    }
+}
+@media(max-width:1199px){
+    #header .menu {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    #devteam-six span.h {
+        font-size: 55px;
+    }
+    #devteam-six span.i {
+        font-size: 55px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 55px;
+    }
+    #devteam-six h3.devteamsix.mission {
+        font-size: 30px;
+    }
+    #devteam-six p.full-stack {
+        font-size: 18px;
+        max-width: 849px;
+    }
+    #check strong.Check {
+        font-size: 30px;
+    }
+    #check h1.our-projects {
+        font-size: 55px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 14px;
+    }
+    #check .img-about-project {
+        width: 120px;
+        height: 120px;
+        outline-offset: 5px;
+        margin: 110px auto 60px;
+    }
+    #check h3.about-project {
+        font-size: 20px;
+    }
+    #check p.paragraph-about {
+        font-size: 14px;
+    }
+    #check h2.technologies {
+        font-size: 20px;
+    }
+    #check p.paragraph-technologies {
+        font-size: 14px;
+    }
+    #check p.ciscuss {
+        font-size: 13px;
+    }
+    #check button.Check-Project {
+        font-size: 12px;
+        padding: 11px 18px;
+    }
+    #ecosystem h2.devteamsix-ecosystem {
+        font-size: 28px;
+    }
+    #ecosystem p.creating {
+        font-size: 14px;
+    }
+    #ecosystem p.p-creating {
+        font-size: 14px;
+    }
+    #use-devteam strong.use-devteam {
+        font-size: 30px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 55px;
+    }
+    #use-devteam a.popover-bg {
+        height: 65px;
+        width: 65px;
+    }
+    #use-devteam .two-img {
+        position: absolute;
+        top: 251px;
+        left: -8px;
+    }
+    #use-devteam .c-popover-img {
+        position: absolute;
+        bottom: 305px;
+        left: 15px;
+    }
+    #use-devteam .popover-box-img {
+        position: absolute;
+        top: 95px;
+        left: 98px;
+    }
+    #use-devteam .popover-five-img {
+        position: absolute;
+        top: 202px;
+        left: 77px;
+    }
+    #use-devteam .popover-leves-img {
+        position: absolute;
+        top: 308px;
+        left: 95px;
+    }
+    #use-devteam .popover-a-img {
+        position: absolute;
+        top: 130px;
+        left: 185px;
+    }
+    #use-devteam .popover-html-img {
+        position: absolute;
+        bottom: 266px;
+        left: 178px;
+    }
+    #use-devteam .popover-smart-img {
+        position: absolute;
+        top: 82px;
+        right: 113px;
+    }
+    #use-devteam .popover-dimaond-img {
+        position: absolute;
+        top: 235px;
+        left: 159px;
+    }
+    #use-devteam .popover-us-img {
+        position: absolute;
+        bottom: 192px;
+        right: 41px;
+    }
+    #served h3.we-Served {
+        font-size: 30px;
+    }
+    #served p.served-paragraph {
+        font-size: 18px;
+    }
+    #served h3.dApp-Development {
+        font-size: 30px;
+    }
+    #served p.served-paragraphe {
+        font-size: 14px;
+    }
+    #served button.View-Detail {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 30px;
+    }
+    #our-leadership h2.team {
+        font-size: 55px;
+    }
+    #our-leadership h5.Nereu-.Noshirwani {
+        font-size: 14px;
+    }
+    #our-leadership h5.Community-Director {
+        font-size: 15px;
+       
+    }
+    #our-leadership .your-classess a {
+        height: 27px;
+        width: 27px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 30px;
+    }
+    #our-leadership strong.price {
+        font-size: 25px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 30px;
+    }
+    #our-leadership h2.best {
+        font-size: 55px;
+    }
+    #our-leadership p.our-paragraph {
+        font-size: 14px;
+    }
+    #our-leadership button.Become-Our {
+        font-size: 14px;
+        padding: 11px 22px;
+    }
+    #our-leadership h3.Clients-Love {
+        font-size: 30px;
+    }
+    #our-leadership p.eric-paragraph {
+        font-size: 14px;
+    }
+}
+@media(max-width:991px){
+    li.nav-item.px-2:hover{
+        background-color: #fff;
+        padding: 10px;
+    }
+    #header {
+        position: relative;
+    }
+    #header nav.navbar.navbar-expand-lg.navbar-light{
+        position: static;
+   }
+    #header .navbar.justify-content-end {
+        position: static;
+}
+    #header .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #header .navbar-collapse{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: 99;
+        background: rgba(0,0,0, 0.7);
+        padding: 20px;
+   }
+   #devteam-six {
+    padding: 0px 0px 100px 0px;
+}
+    .devteam-six-img{
+        width: 290px; 
+        height: 300px;
+        position: relative;
+        animation: mymove 5s ;
+    }
+    @keyframes mymove {
+        from {width: 450px; height: 550px;}
+        to {width: 290px; height: 300px;}
+    }
+    #devteam-six button {
+        margin-bottom: 0px !important;
+    }
+    #devteam-six span.h {
+        font-size: 50px;
+    }
+    #devteam-six span.i {
+        font-size: 50px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 50px;
+    }
+    #devteam-six h3.devteamsix.mission{
+        font-size: 27px;
+    }
+    #devteam-six p.full-stack {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #devteam-six button {
+        margin-bottom: 100px;
+    }
+    #devteam-six .corve-img {
+        margin-bottom: 90px;
+    }
+    #check {
+        padding: 100px 0px;
+    }
+    #check strong.Check {
+        font-size: 27px;
+    }
+    #check h1.our-projects {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 13px;
+    }
+    #check  .nav-link {
+        padding: 13px;
+    }
+    #check .img-about-project {
+        width: 100px;
+        height: 100px;
+        outline-offset: 4px;
+    }
+    #check h3.about-project {
+        font-size: 18px;
+    }
+    #check p.paragraph-about {
+        font-size: 12px;
+    }
+    #check h2.technologies {
+        font-size: 18px;
+    }
+    #check p.paragraph-technologies {
+        font-size: 13px;
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+    i.text-white.fs-3.fa.fa-angle-right{
+        font-size: 13px !important;
+    }
+    #check p.ciscuss {
+        font-size: 11px;
+        margin-bottom: 0 !important;
+        line-height: 12px;
+    }
+    #check button.Check-Project {
+        font-size: 11px;
+        padding: 11px 8px;
+        border: 1px solid #fff;
+    }
+    #check .text-icon.d-flex {
+        padding: 20px 5px;
+        gap: 15px;
+        align-items: center;
+    }
+    #check ul.icon-img.p-0 {
+        margin-bottom: 50px;
+    }
+    #check .corve-img {
+        margin-bottom: 80px;
+        padding-top: 50px;
+    }
+    #ecosystem {
+        padding: 100px 0px 0px;
+    }
+    #ecosystem .main-ecosystem {
+        margin-bottom: 100px;
+    }
+    #ecosystem h2.devteamsix-ecosystem {
+        font-size: 25px;
+    }
+    #ecosystem p.creating {
+        font-size: 12px;
+    }
+    #ecosystem p.p-creating {
+        font-size: 12px;
+    }
+    #ecosystem p.creating-cir {
+        margin-bottom: 20px;
+    }
+    #ecosystem p.p-creating {
+        margin-bottom: 20px;
+    }
+    #use-devteam .c-popover-img {
+        bottom: -407px;
+    }
+    #use-devteam a.popover-bg {
+        height: 60px;
+        width: 60px;
+    }
+    .popover {
+        font-size: 13px;
+        margin-top: 100px;
+        max-width: 450px;
+    }
+    #use-devteam .main-use-devteam {
+        padding-top: 80px;
+        margin-bottom: 80px;
+    }
+    #use-devteam .popover-html-img {
+        position: absolute;
+        bottom: -400px;
+        left: 204px;
+    }
+    #use-devteam .popover-smart-img {
+        position: absolute;
+        top: 62px;
+        left: 273px;
+    }
+    #use-devteam .popover-php-img {
+        position: absolute;
+        top: 157px;
+        left: 300px;
+    }
+    #use-devteam .popover-buble-img {
+        position: absolute;
+        top: 250px;
+        left: 253px;
+    }
+    #use-devteam .popover-n-img {
+        position: absolute;
+        top: 103px;
+        left: 400px;
+    }
+    #use-devteam .popover-truffle-img {
+        position: absolute;
+        top: 210px;
+        left: 372px;
+    }
+    #use-devteam .popover-ux-img {
+        position: absolute;
+        bottom: -370px;
+        right: 306px;
+    }
+    #use-devteam .popover-us-img {
+        position: absolute;
+        bottom: -457px;
+        right: 241px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 50px;
+    }
+    #use-devteam .man-table-img {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 590px;
+    }
+    #served .main-heading-served {
+        padding-top: 0px;
+    }
+    #served p.served-paragraph {
+        margin-bottom: 80px;
+    }
+    #served h3.we-Served {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    #served p.served-paragraph {
+        font-size: 15px;
+    }
+    #served h3.dApp-Development {
+        font-size: 27px;
+    }
+    #served p.served-paragraphe {
+        font-size: 12px;
+        margin-bottom: 30px
+    }
+    #served button.View-Detail {
+        font-size: 13px;
+        padding: 8px 25px;
+    }
+    .mob-img {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    #our-leadership .heading-leadership {
+        padding-top: 80px;
+    }
+    #our-leadership .your-classess {
+        margin-bottom: 70px;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 27px;
+    }
+    #our-leadership .background-red {
+        margin-bottom: 80px;
+    }
+    #our-leadership .mian-work-heading {
+        margin-bottom: 80px;
+    }    
+    #our-leadership h2.team {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    #our-leadership h5.Nereu-.Noshirwani {
+        font-size: 13px;
+    }
+    #our-leadership h5.Community-Director {
+        font-size: 13px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 27px;
+    }
+    #our-leadership strong.price {
+        font-size: 22px;
+    }
+    #our-leadership span.Active-Hours {
+        font-size: 13px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 27px;
+    }
+    #our-leadership h2.best {
+        font-size: 44px;
+    }
+    #our-leadership h2.best {
+        font-size: 44px;
+        margin-bottom: 30px;
+    }
+    #our-leadership p.our-paragraph {
+        font-size: 12px;
+    }
+    #our-leadership button.Become-Our {
+        font-size: 12px;
+        padding: 11px 22px;
+    }
+    #our-leadership .mian-work-heading {
+        margin-bottom: 100px;
+    }
+    #our-leadership h3.Clients-Love {
+        font-size: 27px;
+    }
+    #our-leadership p.eric-paragraph {
+        font-size: 12px;
+    }
+    #our-leadership h6.eric-turner {
+        font-size: 12px;
+    }
+    #footer .form-control {
+        width: 350px;
+    }
+   
+}
+@media(max-width:767px){
+    #header {
+        background-color: #17171c;
+        padding: 10px 10px;
+    }
+    #devteam-six .hi-img {
+        height: 90px;
+    }
+    .devteam-six-img{
+        width: 230px; 
+        height: 260px;
+        position: relative;
+        animation: mymove 5s ;
+    }
+    @keyframes mymove {
+        from {width: 400px; height: 550px;}
+        to {width: 230px; height: 260px;}
+    }
+    #devteam-six span.h {
+        font-size: 40px;
+    }
+    #devteam-six span.h {
+        font-size: 40px;
+    }
+    #devteam-six span.i {
+        font-size: 40px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 40px;
+    }
+    #devteam-six h3.devteamsix.mission {
+        font-size: 25px;
+        margin-bottom: 30px; 
+    }
+    #devteam-six p.full-stack {
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    #devteam-six button {
+        margin-bottom: 60px;
+    }
+    #devteam-six .corve-img {
+        margin-bottom: 75px;
+    }
+    #check {
+        background-image: url(../image/check-background-img.png);
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        margin-top: -1PX;
+    }
+    #check strong.Check {
+        font-size: 25px;
+    }
+    #check h1.our-projects {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 11px;
+        padding: 0px 6px;
+    }
+    #devteam-six .corve-img {
+        margin-bottom: 60px;
+    }
+    #check .img-about-project {
+        width: 90px;
+        height: 90px;
+        outline-offset: 3px;
+        margin: 70px auto 60px;
+        overflow: hidden;
+    }
+    #check h3.about-project {
+        font-size: 17px;
+    }
+    #check h2.technologies {
+        font-size: 17px;
+        text-align: center;
+    }
+    #check .main-heading-img {
+        margin-bottom: 60px;
+    }
+    #check p.paragraph-technologies {
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    #check .corve-img {
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+    #check .button-text.d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #check .button-text.d-flex {
+        margin-bottom: 0;
+    }
+    #ecosystem h2.devteamsix-ecosystem {
+        font-size: 22px;
+        text-align: center;
+    }
+    #use-devteam strong.use-devteam{
+        font-size: 27px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 40px;
+    }
+    #use-devteam .popover-ux-img {
+        position: absolute;
+        bottom: -386px;
+        right: 127px;
+    }
+    .popover {
+        font-size: 12px;
+        margin-top: 100px;
+        max-width: 400px;
+    }
+    .popover-header {
+        font-size: 25px;
+        font-weight: 300;
+        padding: 20px 0px;
+    }
+    #use-devteam .popover-us-img {
+        position: absolute;
+        bottom: -467px;
+        right: 69px;
+    }
+    #served h3.we-Served {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    #served p.served-paragraph {
+        margin-bottom: 80px;
+    }
+    #served h3.dApp-Development {
+        font-size: 25px;
+        text-align: center;
+    }
+    #served h3.dApp-Development{
+        margin-bottom: 25px;
+    }
+    #served p.served-paragraphe {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    ul.icon-img.p-0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul.p-0 {
+        display: inline-table;
+    }
+    .ecosystem-img {
+        margin-bottom: 50px;
+    }
+    #served .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #served .babble-img {
+        text-align: center;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 25px;
+    }
+    #our-leadership h2.team {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 25px;
+    }
+    #our-leadership strong.price {
+        font-size: 19px;
+    }
+    #our-leadership span.Active-Hours {
+        font-size: 12px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 25px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #our-leadership h2.best {
+        font-size: 40px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    #our-leadership p.our-paragraph {
+        font-size: 12px;
+        text-align: center;
+    }
+    #our-leadership .button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #our-leadership  .main-img-est{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media(max-width:575px){
+    #devteam-six {
+        padding: 0px 0px 80px 0px;
+    }
+    .devteam-six-img{
+        width: 180px; 
+        height: 220px;
+        position: relative;
+        animation: mymove 5s ;
+    }
+    @keyframes mymove {
+        from {width: 320px; height: 330px;}
+        to {width: 180px; height: 220px;}
+    }
+    #devteam-six span.h {
+        font-size: 35px;
+    }
+    #devteam-six span.i {
+        font-size: 35px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 35px;
+    }
+    #devteam-six h3.devteamsix.mission {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    #check {
+        padding: 80px 0px;
+    }
+    #check h1.our-projects {
+        margin-bottom: 40px;
+    }
+    #check .img-about-project {
+        margin: 46px auto 45px;
+    }
+    #check h2.technologies {
+        padding-top: 30px;
+    }
+    #check .button-text.d-flex {
+        margin-bottom: 0px;
+    }
+    #check {
+        padding: 70px 0px;
+    }
+    #check strong.Check {
+        font-size: 22px;
+    }
+    #check h1.our-projects {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 12px;
+        padding: 5px 11px;
+    }
+    #check .img-about-project {
+        width: 80px;
+        height: 80px;
+        outline-offset: 2px;
+        margin: 70px auto 60px;
+        overflow: hidden;
+    }
+    #check h3.about-project {
+        font-size: 16px;
+    }
+    #check h2.technologies {
+        font-size: 16px;
+    }
+    #ecosystem .main-ecosystem {
+        margin-bottom: 70px;
+    }
+    #ecosystem {
+        padding: 70px 0px 0px;
+    }
+    #ecosystem h2.devteamsix-ecosystem {
+        font-size: 20px;
+    }
+    #ecosystem span.cir {
+        height: 10px;
+        width: 10px;
+    }
+    .popover {
+        font-size: 12px;
+        margin-top: 100px;
+        max-width: 350px;
+    }
+    .popover-header {
+        font-size: 22px;
+        font-weight: 300;
+        padding: 20px 0px;
+    }
+    .popover-body {
+        font-size: 13px;
+    }
+    #ecosystem p.creating-cir {
+        font-size: 15px;
+    }
+    #use-devteam .main-use-devteam {
+        padding-top: 60px;
+        margin-bottom: 60px;
+    }
+    #use-devteam strong.use-devteam{
+        font-size: 25px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 35px;
+    }
+    #use-devteam a.popover-bg {
+        height: 50px;
+        width: 50px;
+    }
+    #use-devteam .popover-truffle-img {
+        position: absolute;
+        top: 211px;
+        left: 359px;
+    }
+    #use-devteam .popover-ux-img {
+        position: absolute;
+        bottom: -344px;
+        right: 96px;
+    }
+    #use-devteam .popover-us-img {
+        position: absolute;
+        bottom: -413px;
+        right: 45px;
+    }
+    #served h3.we-Served {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #served .main-heading-served {
+        padding-top: 0;
+    }
+    #served {
+        padding: 50px 0px;
+    }
+    #served p.served-paragraph {
+        margin-bottom: 50px;
+    }
+    #served p.served-paragraph {
+        font-size: 13px;
+    }
+    #served h3.dApp-Development {
+        font-size: 23px;
+    }
+    #served p.served-paragraphe {
+        margin-bottom: 20px;
+    }
+    #our-leadership .your-classess {
+        margin-bottom: 60px;
+    }
+    #our-leadership .background-red {
+        margin-bottom: 60px;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 23px;
+    }
+    #our-leadership h2.team {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    #our-leadership .background-red {
+        margin-bottom: 50px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 23px;
+    }
+    #our-leadership strong.price {
+        font-size: 17px;
+    }
+    #our-leadership .background-red {
+        margin-bottom: 80px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 23px;
+    }
+    #our-leadership h2.best {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    #our-leadership .main-img-est {
+        margin: 15px 0px;
+    }
+    #our-leadership h3.Clients-Love {
+        font-size: 25px;
+    }
+    #our-leadership .mian-box {
+        margin-bottom: 60px;
+    }
+    #footer .form-control {
+        width: 320px;
+    }
+    #footer p.apply {
+        font-size: 13px;
+    }
+    #footer p.copy-rights {
+        font-size: 13px;
+    }
+    #footer a.apple {
+        font-size: 13px;
+
+    }
+}
+@media(max-width:481px){
+    .devteam-six-img{
+        width: 130px; 
+        height: 170px;
+        position: relative;
+        animation: mymove 5s ;
+    }
+    @keyframes mymove {
+        from {width: 220px; height: 270px;}
+        to {width: 130px; height: 170px;}
+    }
+    #devteam-six span.h {
+        font-size: 30px;
+    }
+    #devteam-six span.i {
+        font-size: 30px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 30px;
+    }
+    #devteam-six h3.devteamsix.mission {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    #check strong.Check {
+        font-size: 20px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+    #check .img-about-project {
+        width: 70px;
+        height: 70px;
+        outline-offset: 2px;
+        margin: 56px auto 50px;
+        overflow: hidden;
+    }
+    #check p.ciscuss {
+        font-size: 9px;
+    }
+    #check button.Check-Project {
+        font-size: 10px;
+    }
+    #check h3.about-project {
+        font-size: 16px;
+    }
+    #check h2.technologies {
+        font-size: 15px;
+    }
+    #ecosystem h2.devteamsix-ecosystem{
+        font-size: 18px;
+    }
+    #ecosystem p.creating-cir {
+        font-size: 14px;
+    }
+    .popover {
+        font-size: 12px;
+        margin-top: 100px;
+        max-width: 250px;
+    }
+    .popover-header {
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 0px;
+    }
+    .popover-body {
+        font-size: 12px;
+    }
+    #use-devteam strong.use-devteam {
+        font-size: 22px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 25px;
+    }
+    #use-devteam .popover-box-img {
+        position: absolute;
+        top: 94px;
+        left: 68px;
+    }
+    #use-devteam .popover-five-img {
+        position: absolute;
+        top: 200px;
+        left: 44px;
+    }
+    #use-devteam .popover-leves-img {
+        position: absolute;
+        top: 286px;
+        left: 60px;
+    }
+    #use-devteam .popover-a-img {
+        position: absolute;
+        top: 146px;
+        left: 119px;
+    }
+    #use-devteam .popover-dimaond-img {
+        position: absolute;
+        top: 220px;
+        left: 109px;
+    }
+    #use-devteam .popover-html-img {
+        position: absolute;
+        bottom: -362px;
+        left: 130px;
+    }
+    #use-devteam .popover-smart-img {
+        position: absolute;
+        top: 65px;
+        left: 154px;
+    }
+    #use-devteam .popover-php-img {
+        position: absolute;
+        top: 129px;
+        left: 187px;
+    }
+    #use-devteam .popover-buble-img {
+        position: absolute;
+        top: 238px;
+        left: 178px;
+    }
+    #use-devteam .popover-n-img {
+        position: absolute;
+        top: 81px;
+        left: 247px;
+    }
+    #use-devteam .popover-truffle-img {
+        position: absolute;
+        top: 192px;
+        left: 231px;
+    }
+    #use-devteam .popover-us-img {
+        position: absolute;
+        bottom: -385px;
+        right: 1px;
+    }
+    #use-devteam .popover-ux-img {
+        position: absolute;
+        bottom: -349px;
+        right: 51px;
+    }
+    #served h3.we-Served {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #served h3.dApp-Development {
+        font-size: 20px;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 20px;
+    }
+    #our-leadership h2.team{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    #use-devteam .main-use-devteam {
+        padding-top: 70px;
+        margin-bottom: 11px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 20px;
+    }
+    #our-leadership strong.price {
+        font-size: 15px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 20px;
+    }
+    #our-leadership h2.best {
+        font-size: 30px;
+    }
+    #footer button.Subscribe-button {
+        padding: 12px 18px;
+    }
+    #footer .form-control {
+        width: 182px;
+    }
+    #footer p.apply {
+        font-size: 12px;
+    }
+    #footer p.copy-rights {
+        font-size: 12px;
+    }
+}
+@media(max-width:320px){
+    .devteam-six-img{
+        width: 100px; 
+        height: 130px;
+        position: relative;
+        animation: mymove 5s ;
+    }
+    @keyframes mymove {
+        from {width: 170px; height: 200px;}
+        to {width: 100px; height: 130px;}
+    }
+    #devteam-six span.h {
+        font-size: 25px;
+    }
+    #devteam-six span.i {
+        font-size: 25px;
+    }
+    #devteam-six span.invertercoma {
+        font-size: 25px;
+    }
+    #devteam-six h3.devteamsix.mission {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    #check strong.Check {
+        font-size: 17px;
+    }
+    #devteam-six .corve-img {
+        margin-bottom: 50px;
+    }
+    #check h1.our-projects {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+    #check .nav-pills .nav-link {
+        font-size: 12px;
+        padding: 5px 4px;
+    }
+    #check .img-about-project {
+        width: 60px;
+        height: 60px;
+        outline-offset: 1px;
+        margin: 56px auto 50px;
+        overflow: hidden;
+    }
+    #check h3.about-project {
+        font-size: 15px;
+    }
+    #check .btn{
+        padding: 0;
+    }
+    #check .button-text.d-flex {
+        margin-bottom: 55px;
+    }
+    #check .text-icon.d-flex {
+        padding: 22px 5px;
+        gap: 0px;
+    }
+    #ecosystem h2.devteamsix-ecosystem {
+        font-size: 15px;
+    }
+    #ecosystem p.creating-cir {
+        font-size: 12px;
+    }
+    #ecosystem .main-ecosystem {
+        padding: 0px 0px;
+    }
+    #use-devteam strong.use-devteam {
+        font-size: 16px;
+    }
+    #use-devteam h2.Boost-Your {
+        font-size: 20px;
+    }
+    #use-devteam .popover-n-img {
+        position: absolute;
+        top: 44px;
+        left: 213px;
+    }
+    #use-devteam .popover-truffle-img {
+        position: absolute;
+        top: 189px;
+        left: 212px;
+    }
+    #use-devteam .popover-ux-img {
+        position: absolute;
+        bottom: -417px;
+        right: 51px;
+    }
+
+    #served h3.we-Served {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    #served p.served-paragraph {
+        font-size: 12px;
+    }
+    #served h3.dApp-Development {
+        font-size: 17px;
+    }
+    #our-leadership span.heading-our-Leadership {
+        font-size: 17px;
+    }
+    #our-leadership h2.team{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    #our-leadership h2.Proud-Empowered {
+        font-size: 17px;
+    }
+    #our-leadership strong.price {
+        font-size: 14px;
+    }
+    #our-leadership strong.work-with {
+        font-size: 17px;
+    }
+    #our-leadership h2.best {
+        font-size: 25px;
+    }
+    #our-leadership h3.Clients-Love {
+        font-size: 20px;
+    }
+    #our-leadership .background-red {
+        margin-bottom: 50px;
+    }
+    #our-leadership p.eric-paragraph {
+        font-size: 11px;
+    }
+    #our-leadership h4.Work-With {
+        margin-bottom: 20px;
+    }
+    #our-leadership .mian-box {
+        padding: 10px 10px;
+    }
+    #our-leadership .your-classess .slick-slide {
+        width: 229px !important;
+    }
+    #footer label.form-label {
+        font-size: 12px;
+    }
+    #footer button.Subscribe-button {
+        padding: 15px 18px;
+        font-size: 12px;
+    }
+    #footer .form-control {
+        width: 155px;
+    }
 }
